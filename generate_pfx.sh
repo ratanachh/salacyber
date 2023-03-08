@@ -1,1 +1,1 @@
-openssl pkcs12 -export -out aspnet/https/aspnetapp.pfx -inkey aspnet/letsencrypt/privkey.pem -in aspnet/letsencrypt/fullchain.pem -password secureP@SSw0rdGCF078
+openssl pkcs12 -export -out aspnet/https/aspnetapp.pfx -inkey aspnet/letsencrypt/privkey.pem -in aspnet/letsencrypt/fullchain.pem -passin secureP@SSw0rdGCF078
