@@ -9,10 +9,8 @@ services:
       - "ASPNETCORE_Kestrel__Certificates__Default__Path=/https/aspnetapp.pfx"
     volumes:
       - ./aspnet/https:/https:ro
-      - ./aspnet/Files:/app/Files
     ports:
       - "5005:5005"
-      - "5006:5006"
     depends_on:
       - db
     restart: on-failure
