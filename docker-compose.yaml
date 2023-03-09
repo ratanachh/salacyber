@@ -4,7 +4,7 @@ services:
   server:
     image: ratanachh/inventory
     environment:
-      - "ConnectionStrings__DefaultConnection=Server=db;Database=Inventory;User=sa;Password=P@SSw0rdGCF078;MultipleActiveResultSets=true"
+      - "ConnectionStrings__DefaultConnection=Server=db;Database=Inventory;User=sa;Password=P@SSw0rdGCF078;MultipleActiveResultSets=true;TrustServerCertificate=true"
     ports:
       - "5005:80"
     depends_on:
